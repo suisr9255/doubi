@@ -6,12 +6,12 @@ ssr.sh
 - 脚本说明: ShadowsocksR 一键安装/管理脚本，支持单端口/多端口切换和管理
 - 系统支持: CentOS6+ / Debian6+ / Ubuntu14+
 - 使用方法: https://doub.io/ss-jc42/
-- 项目地址: https://github.com/shadowsocksr/shadowsocksr/tree/manyuser
+- 项目地址: https://github.com/ToyoDAdoubi/shadowsocksr
 
 ### 脚本特点:
 目前网上的各个ShadowsocksR脚本基本都是只有 安装/启动/重启 等基础功能，对于小白来说还是不够简单方便。既然是一键脚本，那么就要尽可能地简单，小白更容易接受使用！
 
-- 支持 限制 端口速度
+- 支持 限制 用户速度
 - 支持 限制 端口设备数
 - 支持 显示 当前连接IP
 - 支持 显示 SS/SSR连接+二维码
@@ -25,7 +25,57 @@ ssr.sh
 wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssr.sh && chmod +x ssr.sh && bash ssr.sh
 ```
 
+ssrmu.sh
+======
+
+- 脚本说明: ShadowsocksR 一键安装/管理脚本，支持流量控制
+- 系统支持: CentOS6+ / Debian6+ / Ubuntu14+
+- 使用方法: https://doub.io/ss-jc60/
+- 项目地址: https://github.com/ToyoDAdoubi/shadowsocksr
+
+### 脚本特点:
+目前网上的各个ShadowsocksR脚本基本都是只有 安装/启动/重启 等基础功能，对于小白来说还是不够简单方便。既然是一键脚本，那么就要尽可能地简单，小白更容易接受使用！
+
+- 支持 限制 用户速度
+- 支持 限制 用户设备数
+- 支持 限制 用户总流量
+- 支持 定时 流量清零
+- 支持 显示 当前连接IP
+- 支持 显示 SS/SSR连接+二维码
+- 支持 一键安装 锐速
+- 支持 一键安装 BBR
+- 支持 一键封禁 垃圾邮件(SMAP)/BT/PT
+
+### 下载安装:
+``` bash
+wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssrmu.sh && chmod +x ssrmu.sh && bash ssrmu.sh
+```
+
 ssr_check.sh
+======
+
+- 脚本说明: ShadowsocksR 批量快速验证账号可用性
+- 系统支持: CentOS6+ / Debian6+ / Ubuntu14+
+- 使用方法: https://doub.io/ss-jc56/
+
+### 下载安装:
+``` bash
+wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssr_check.sh && chmod +x ssr_check.sh
+```
+
+ssrstatus.sh
+======
+
+- 脚本说明: ShadowsocksR 账号在线监控网站
+- 系统支持: CentOS6+ / Debian6+ / Ubuntu14+
+- 使用方法: https://doub.io/shell-jc5/
+
+### 下载安装:
+``` bash
+wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssrstatus.sh && chmod +x ssrstatus.sh && bash ssrstatus
+```
+
+ssr_ip_check.sh
 ======
 
 - 脚本说明: ShadowsocksR 检测每个端口链接IP数
@@ -34,7 +84,7 @@ ssr_check.sh
 
 ### 下载安装:
 ``` bash
-wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssr_check.sh && chmod +x ssr_check.sh
+wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssr_ip_check.sh && chmod +x ssr_ip_check.sh
 ```
 
 bbr.sh
@@ -61,6 +111,18 @@ brook.sh
 wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/brook.sh && chmod +x brook.sh && bash brook.sh
 ```
 
+goflyway.sh
+======
+
+- 脚本说明: GoFlyway 一键安装脚本
+- 系统支持: CentOS6+ / Debian7+ / Ubuntu14+
+- 使用方法: https://doub.io/goflyway-jc2/
+
+### 下载安装:
+``` bash
+wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/goflyway.sh && chmod +x goflyway.sh && bash goflyway.sh
+```
+
 pipes.sh
 ======
 
@@ -70,7 +132,19 @@ pipes.sh
 
 ### 下载安装:
 ``` bash
-wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/pipes.sh && chmod +x pipes.sh && bash pipes.sh
+wget -N --no-check-certificate https://raw.githubusercontent.com/pipesocks/install/master/install.sh && mv install.sh pipes.sh && chmod +x pipes.sh && bash pipes.sh
+```
+
+dowsdns.sh
+======
+
+- 脚本说明: DowsDNS 一键安装脚本
+- 系统支持: CentOS7 / Debian7+ / Ubuntu14+
+- 使用方法: https://doub.io/dowsdns-jc3/
+
+### 下载安装:
+``` bash
+wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/dowsdns.sh && chmod +x dowsdns.sh && bash dowsdns.sh
 ```
 
 caddy_install.sh
@@ -113,6 +187,42 @@ pserver.sh
 wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/pserver.sh && chmod +x pserver.sh && bash pserver.sh
 ```
 
+aria2.sh
+======
+
+- 脚本说明: Aria2 一键安装脚本
+- 系统支持: CentOS6+ / Debian6+ / Ubuntu14+
+- 使用方法: https://doub.io/shell-jc4/
+
+### 下载安装:
+``` bash
+wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/aria2.sh && chmod +x aria2.sh && bash aria2.sh
+```
+
+ssh_port.sh
+======
+
+- 脚本说明: SSH 一键修改端口脚本
+- 系统支持: Debian6+ / Ubuntu14+
+- 使用方法: https://doub.io/linux-jc11/
+
+### 下载安装:
+``` bash
+wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssh_port.sh && chmod +x ssh_port.sh && bash ssh_port.sh
+```
+
+ocserv.sh
+======
+
+- 脚本说明: Ocserv AnyConnect 一键安装脚本
+- 系统支持: Debian7+ / Ubuntu14+
+- 使用方法: https://doub.io/vpnzy-7/
+
+### 下载安装:
+``` bash
+wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ocserv.sh && chmod +x ocserv.sh && bash ocserv.sh
+```
+
 gogo.sh
 ======
 
@@ -135,6 +245,18 @@ socat.sh
 ### 下载安装:
 ``` bash
 wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/socat.sh && chmod +x socat.sh && bash socat.sh
+```
+
+tinymapper.sh
+======
+
+- 脚本说明: tinyPortMapper 一键安装/管理脚本
+- 系统支持: CentOS6+ / Debian6+ / Ubuntu14+
+- 使用方法: https://doub.io/wlzy-36/
+
+### 下载安装:
+``` bash
+wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/tinymapper.sh && chmod +x tinymapper.sh && bash tinymapper.sh
 ```
 
 haproxy.sh
@@ -161,6 +283,18 @@ iptables-pf.sh
 wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/iptables-pf.sh && chmod +x iptables-pf.sh && bash iptables-pf.sh
 ```
 
+status.sh
+======
+
+- 脚本说明: ServerStatus 一键安装/管理脚本
+- 系统支持: CentOS6+ / Debian6+ / Ubuntu14+
+- 使用方法: https://doub.io/shell-jc3/
+
+### 下载安装:
+``` bash
+wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/status.sh && chmod +x status.sh && bash status.sh
+```
+
 pythonhttp.sh
 ======
 
@@ -183,6 +317,30 @@ adbyby.sh
 ### 下载安装:
 ``` bash
 wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/adbyby.sh && chmod +x adbyby.sh && bash adbyby.sh
+```
+
+libsodium.sh
+======
+
+- 脚本说明: libsodium 一键安装脚本
+- 系统支持: CentOS6+ / Debian6+ / Ubuntu14+
+- 使用方法: https://doub.io/shell-jc6/
+
+### 下载安装:
+``` bash
+wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/libsodium.sh && chmod +x libsodium.sh && bash libsodium.sh
+```
+
+ban_iptables.sh
+======
+
+- 脚本说明: iptables 垃圾邮件(SPAM)/BT/PT 一键封禁脚本
+- 系统支持: CentOS6+ / Debian6+ / Ubuntu14+
+- 使用方法: https://doub.io/shell-jc2/
+
+### 下载安装:
+``` bash
+wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ban_iptables.sh && chmod +x ban_iptables.sh && bash ban_iptables.sh
 ```
 
 Get_Out_Spam.sh

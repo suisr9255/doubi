@@ -6,7 +6,7 @@
 # Required-Stop:     $network $local_fs $remote_fs
 # Default-Start:     2 3 4 5
 # Default-Stop:      0 1 6
-# Short-Description: ShadowsocksR
+# Short-Description: Lightweight SOCKS5 proxy tool
 # Description:       Start or stop the ShadowsocksR server
 ### END INIT INFO
 
@@ -36,8 +36,10 @@ do_start(){
 	echo -e "${Info_font_prefix}[信息]${Font_suffix} $NAME (PID ${PID}) 正在运行..." && exit 0
 	else
 		cd ${FOLDER}
+		#python_ver=$(ls /usr/bin|grep -e "^python[23]\.[1-9]\+$"|tail -1)
+		python_ver="python"
 		ulimit -n 512000
-		nohup python "$BIN" -c "$CONF" a > ssserver.log 2>&1 &
+		nohup "${python_ver}" "$BIN" -c "$CONF" a > ssserver.log 2>&1 &
 		sleep 2s
 		check_running
 		if [[ $? -eq 0 ]]; then
